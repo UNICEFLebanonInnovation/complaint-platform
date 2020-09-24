@@ -186,10 +186,10 @@ LOGIN_REDIRECT_URL = '/'
 DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'd67qehgg5a74iv',
-         'USER': 'ftxkvbirafznct',
-         'PASSWORD': 'e49962e569fb4d755b3d70c8c95719a65cedccc9327683afd24bf71496ea1248',
-         'HOST': 'ec2-54-217-206-236.eu-west-1.compute.amazonaws.com',
+         'NAME': 'd610a40e1q2d8j',
+         'USER': 'fgbacohzpjuxxx',
+         'PASSWORD': 'a6d3df7ed4e15cd122aa317df727be7a297db557019c269be507eb6996730622',
+         'HOST': 'ec2-54-217-225-16.eu-west-1.compute.amazonaws.com',
          'PORT': '5432',
      }
 }

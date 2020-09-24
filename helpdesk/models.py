@@ -458,6 +458,9 @@ class Ticket(models.Model):
 
     REPORT_TYPE = [
         ('', '---------'),
+        ("Complaint on the proper implementation of the COVID-19 preventive measures by the vaccinators", "Complaint on the proper implementation of the COVID-19 preventive measures by the vaccinators"),
+        ("Complaint on the crowd management at sites", "Complaint on the crowd management at sites"),
+        ("Complaint on the proper implementation of the preventive measures to protect children being vaccinated", "Complaint on the proper implementation of the preventive measures to protect children being vaccinated"),
         ("Complaint on vaccine storage, provision and disposal", _("Complaint on vaccine storage, provision and disposal")),
         ("Complaint on vaccinator s skills and visibility (ID/ brand - logo of the campaign should be visible)",
          _("Complaint on vaccinator's skills and visibility (ID/ brand – logo of the campaign should be visible)")),
