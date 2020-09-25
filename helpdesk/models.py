@@ -458,15 +458,21 @@ class Ticket(models.Model):
 
     REPORT_TYPE = [
         ('', '---------'),
-        ("Complaint on the proper implementation of the COVID-19 preventive measures by the vaccinators", "Complaint on the proper implementation of the COVID-19 preventive measures by the vaccinators"),
-        ("Complaint on the crowd management at sites", "Complaint on the crowd management at sites"),
-        ("Complaint on the proper implementation of the preventive measures to protect children being vaccinated", "Complaint on the proper implementation of the preventive measures to protect children being vaccinated"),
-        ("Complaint on vaccine storage, provision and disposal", _("Complaint on vaccine storage, provision and disposal")),
-        ("Complaint on vaccinator s skills and visibility (ID/ brand - logo of the campaign should be visible)",
-         _("Complaint on vaccinator's skills and visibility (ID/ brand – logo of the campaign should be visible)")),
+        ("Complaint on the proper implementation of the COVID-19 preventive measures by the vaccinators",
+         _("Complaint on the proper implementation of the COVID-19 preventive measures by the vaccinators")),
+        ("Complaint on the crowd management at sites", _("Complaint on the crowd management at sites")),
+        ("Complaint on the proper implementation of the preventive measures to protect children being vaccinated",
+         _("Complaint on the proper implementation of the preventive measures to protect children being vaccinated")),
+        ("Complaint on vaccine storage, provision and disposal",
+         _("Complaint on vaccine storage, provision and disposal")),
+        ("Complaint on vaccinator s visibility (ID & brand)",
+         _("Complaint on vaccinator's visibility (ID & brand)")),
+        ("Complaint on vaccinator s skills (e.g. technical, interpersonal communication, appearance and cleanliness)",
+         _("Complaint on vaccinator's skills (e.g. technical, interpersonal communication, appearance and cleanliness)")),
         ("Complaint on proper and timely preparation of the community before vaccination",
          _("Complaint on proper and timely preparation of the community before vaccination")),
-        ("Report on Refusal of vaccination by a community or an institution", _("Report on Refusal of vaccination by a community or an institution")),
+        ("Report on Refusal of vaccination by a community or an institution",
+         _("Report on Refusal of vaccination by a community or an institution")),
         ("Misconceptions and rumors", _("Misconceptions and rumors")),
         ("Other challenges or complaints", _("Other challenges or complaints"))
     ]
@@ -476,9 +482,12 @@ class Ticket(models.Model):
         ('Medical reasons ', _('Medical reasons')),
         ('No trust in the vaccine provided ', _('No trust in the vaccine provided')),
         ('No trust in the team providing the vaccines', _('No trust in the team providing the vaccines')),
+        ('No trust in the government leading this campaign', _('No trust in the government leading this campaign')),
         ('Child already vaccinated', _('Child already vaccinated')),
-        ('Based on the recommendation of the pediatric/ physician', _('Based on the recommendation of the pediatric/ physician')),
+        ('Based on the recommendation of the pediatric/ physician',
+         _('Based on the recommendation of the pediatric/ physician')),
         ('Religious reasons', _('Religious reasons')),
+        ('Risk of contracting COVID-19', _('Risk of contracting COVID-19')),
         ('Anti- vaccination movement ', _('Anti- vaccination movement')),
         ('Other/ specify', _('Other/ specify')),
     ]
@@ -491,9 +500,9 @@ class Ticket(models.Model):
     ]
 
     PRIORITY_CHOICES = (
-        (1, _('High')),
-        (2, _('Medium')),
-        (3, _('Low')),
+        (1, _('NEEDS ACTION IMMEDIATELY')),
+        (2, _('CAN WAIT 1 DAY')),
+        (3, _('CAN WAIT 2 DAYS')),
     )
 
     title = models.CharField(
