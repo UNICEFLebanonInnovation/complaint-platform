@@ -163,7 +163,7 @@ class AbstractTicketForm(CustomFieldMixin, forms.Form):
     report_type = forms.ChoiceField(
         widget=forms.Select(attrs={'class': 'form-control'}),
         choices=Ticket.REPORT_TYPE,
-        required=False,
+        required=True,
         label=_('Report sub type'),
     )
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-helpdesk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-25 13:18-0500\n"
+"POT-Creation-Date: 2020-09-29 02:54-0500\n"
 "PO-Revision-Date: 2013-11-20 11:07+0000\n"
 "Last-Translator: Beshoy Atef <beshosmile@hotmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/django-helpdesk/"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: helpdesk/forms.py:158 helpdesk/models.py:520
 msgid "Report Type"
-msgstr "نوع التقرير"
+msgstr " التقرير"
 
 #: helpdesk/forms.py:167
 msgid "Report sub type"
@@ -71,15 +71,17 @@ msgstr "يرجى التوضيح"
 
 #: helpdesk/forms.py:187
 msgid "Summary of the problem"
-msgstr "ملخص لبعض المشاكل"
+msgstr "ملخص المشكل"
 
 #: helpdesk/forms.py:192
 msgid "Please provide a detailed description of your issue"
-msgstr "وصف المشكلة"
+msgstr ""
+"وصف دقيق للمشكلة، الرجاء تحديد الموقع، التاريخ، المشكلة، الشخص المعني، كيفية "
+"الوصول اليه"
 
 #: helpdesk/forms.py:194
 msgid "Please be as descriptive as possible and include all details"
-msgstr "يرجى أن تصف  بدقة وإدراج جميع التفاصيل قدر الإمكان "
+msgstr "  "
 
 #: helpdesk/forms.py:202 helpdesk/management/commands/escalate_tickets.py:131
 #: helpdesk/models.py:654 helpdesk/templates/helpdesk/filters/sorting.html:22
@@ -95,7 +97,8 @@ msgstr "الاولوية"
 msgid ""
 "Please select the priority level that best match your complaint . If unsure, "
 "leave it as '3'."
-msgstr "رجاء اختيار الاولوية بحرص , فى حالة عدم التأكد , اتركها 3"
+msgstr ""
+"رجاء اختيار الاولوية بحرص , فى حالة عدم التأكد , اتركها (يمكن ان تنتظر يومين)"
 
 #: helpdesk/forms.py:210 helpdesk/models.py:662
 #: helpdesk/templates/helpdesk/ticket.html:181 helpdesk/views/staff.py:610
@@ -104,11 +107,11 @@ msgstr "تاريخ الاستحقاق"
 
 #: helpdesk/forms.py:216
 msgid "Attach File"
-msgstr "إرفاق ملف  - اختياري"
+msgstr "إرفاق ملف"
 
 #: helpdesk/forms.py:217
 msgid "You can attach a file such as a document or screenshot to this ticket."
-msgstr "يمكنك إرفاق ملف مثل مستند أو لقطة شاشة"
+msgstr "يمكنك إرفاق ملف أو صورة "
 
 #: helpdesk/forms.py:226
 msgid "Knowedge Base Item"
@@ -116,13 +119,12 @@ msgstr ""
 
 #: helpdesk/forms.py:321
 msgid "Submitter E-Mail Address"
-msgstr "مرسل العنوان البريدى للشكوة "
+msgstr "البريد الالكتروني لمرسل الشكوى "
 
 #: helpdesk/forms.py:323
 msgid ""
 "This e-mail address will receive copies of all public updates to this ticket."
-msgstr ""
-"سيتلقى عنوان البريد الإلكتروني هذا نسخًا من جميع التحديثات العامة لهذه التذكرة"
+msgstr "سيتلقى مرسل الشكوى الرد عبر البريد الالكتروني المذكور اعلاه"
 
 #: helpdesk/forms.py:418
 #, python-format
@@ -519,9 +521,10 @@ msgstr ""
 
 #: helpdesk/models.py:462
 msgid ""
-"Complaint on the proper implementation of the COVID-19 preventive measures"
+"Complaint on the proper implementation of the COVID-19 preventive measures "
 "by the vaccinators"
-msgstr "شكوى بشأن التنفيذ السليم للتدابير الوقائية لـ كورونا من قبل القائمين بالتحصين"
+msgstr ""
+"شكوى بشأن التنفيذ السليم للتدابير الوقائية لـ كورونا من قبل القائمين بالتحصين"
 
 #: helpdesk/models.py:463
 msgid "Complaint on the crowd management at sites"
@@ -531,7 +534,8 @@ msgstr "شكوى على إدارة الحشود في المواقع"
 msgid ""
 "Complaint on the proper implementation of the preventive measures to protect "
 "children being vaccinated"
-msgstr "شكوى بشأن التنفيذ السليم للإجراءات الوقائية لحماية الأطفال أثناء تلقيحهم"
+msgstr ""
+"شكوى بشأن التنفيذ السليم للإجراءات الوقائية لحماية الأطفال أثناء تلقيحهم"
 
 #: helpdesk/models.py:467
 msgid "Complaint on vaccine storage, provision and disposal"
@@ -539,15 +543,13 @@ msgstr "شكوى بشأن تخزين اللقاحات وتوفيرها والت�
 
 #: helpdesk/models.py:469
 msgid "Complaint on vaccinator's visibility (ID & brand)"
-msgstr ""
-" هوية الملقح وعلامةالحملة  يجب أن تكون واضحة و مرئية -  شكوى بشأن مهارات "
-"الملقحين أو مدى مرئية الحملة"
+msgstr " شكوى بشأن الملقح وعلامة الحملة - يجب ان تكون واضحة ومرئية"
 
 #: helpdesk/models.py:471
 msgid ""
 "Complaint on vaccinator's skills (e.g. technical, interpersonal "
 "communication, appearance and cleanliness)"
-msgstr ""
+msgstr " شكوى بشأن مهارات الملقح (التقنية والتواصل الشخصي والمظهر والنظافة) "
 
 #: helpdesk/models.py:473
 msgid ""
@@ -617,7 +619,7 @@ msgstr "يمكن أن تنتظر يوم واحد"
 
 #: helpdesk/models.py:505
 msgid "CAN WAIT 2 DAYS"
-msgstr "يمكن أن تنتظر يومين"
+msgstr "يمكن ان تنتظر يومين"
 
 #: helpdesk/models.py:528
 msgid "Please specify reasons n the narrative as per the following"
@@ -1447,19 +1449,19 @@ msgstr "التقارير"
 #: helpdesk/templates/helpdesk/public_create_ticket.html:16
 #: helpdesk/templates/helpdesk/public_homepage.html:38
 msgid "Submit a Report"
-msgstr "أرسل تقريرا"
+msgstr "تسجيل تقرير"
 
 #: helpdesk/templates/helpdesk/create_ticket.html:21
 #: helpdesk/templates/helpdesk/edit_ticket.html:21
 #: helpdesk/templates/helpdesk/public_create_ticket_base.html:6
 msgid "All fields are required, unless otherwise stated."
-msgstr "جميع الحقول مطلوبة ،إذ لم يذكر خلاف ذلك"
+msgstr "جميع الحقول مطلوبة - يرجى ادخال وصف واضح"
 
 #: helpdesk/templates/helpdesk/create_ticket.html:21
 #: helpdesk/templates/helpdesk/edit_ticket.html:21
 #: helpdesk/templates/helpdesk/public_create_ticket_base.html:6
 msgid "Please insert title and a clear description."
-msgstr "يرجى إدخال عنوان ووصف واضح"
+msgstr " "
 
 #: helpdesk/templates/helpdesk/create_ticket.html:29
 msgid "Optional"
@@ -1469,7 +1471,7 @@ msgstr "اختياري"
 #: helpdesk/templates/helpdesk/public_create_ticket_base.html:9
 #: helpdesk/templates/helpdesk/public_homepage.html:66
 msgid "Submit Report"
-msgstr "أرسل تقريرا"
+msgstr "ارسال التقرير"
 
 #: helpdesk/templates/helpdesk/dashboard.html:3
 msgid "Helpdesk Dashboard"
@@ -2895,7 +2897,9 @@ msgstr ""
 #~ msgstr "منخفض"
 
 #~ msgid "Description of Issue"
-#~ msgstr "وصف المشكلة"
+#~ msgstr ""
+#~ "وصف دقيق للمشكلة، الرجاء تحديد الموقع، التاريخ، المشكلة، الشخص المعني، "
+#~ "كيفية الوصول اليه"
 
 #~ msgid ""
 #~ "If you select an owner other than yourself, they'll be e-mailed details "
