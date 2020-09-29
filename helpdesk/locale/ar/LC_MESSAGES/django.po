@@ -571,15 +571,15 @@ msgstr "تحديات وشكاوى أخرى"
 
 #: helpdesk/models.py:482
 msgid "Medical reasons"
-msgstr ""
+msgstr "اسباب طبية"
 
 #: helpdesk/models.py:483
 msgid "No trust in the vaccine provided"
-msgstr ""
+msgstr "لا ثقة في اللقاح المقدم"
 
 #: helpdesk/models.py:484
 msgid "No trust in the team providing the vaccines"
-msgstr ""
+msgstr "لا ثقة في الفريق الذي يقدم اللقاح"
 
 #: helpdesk/models.py:485
 msgid "No trust in the government leading this campaign"
@@ -587,15 +587,15 @@ msgstr "عدم الثقة في الحكومة التي تقود هذه الحم�
 
 #: helpdesk/models.py:486
 msgid "Child already vaccinated"
-msgstr ""
+msgstr "الطفل ملقح"
 
 #: helpdesk/models.py:488
 msgid "Based on the recommendation of the pediatric/ physician"
-msgstr ""
+msgstr "بناء على توصية طبيب/ طبيب الأطفال"
 
 #: helpdesk/models.py:489
 msgid "Religious reasons"
-msgstr ""
+msgstr "أسباب دينية"
 
 #: helpdesk/models.py:490
 msgid "Risk of contracting COVID-19"
@@ -603,7 +603,7 @@ msgstr "خطر تعاقد كوفيد-19"
 
 #: helpdesk/models.py:491
 msgid "Anti- vaccination movement"
-msgstr ""
+msgstr "حركة مكافحة التطعيم"
 
 #: helpdesk/models.py:492
 msgid "Other/ specify"
