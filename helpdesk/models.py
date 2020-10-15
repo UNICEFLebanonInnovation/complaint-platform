@@ -505,6 +505,17 @@ class Ticket(models.Model):
         (3, _('CAN WAIT 2 DAYS')),
     )
 
+    CAZA = (
+            ('Beirut', _('Beirut')),
+            ('Bekaa', _('Bekaa')),
+            ('Baalbek-Hermel', _('Baalbek-Hermel')),
+            ('Akkar', _('Akkar')),
+            ('North', _('North')),
+            ('South', _('South')),
+            ('Mont-Lebanon', _('Mont-Lebanon')),
+            ('Nabatiye', _('Nabatiye')),
+        )
+
     title = models.CharField(
         _('Title'),
         max_length=200,
@@ -585,6 +596,14 @@ class Ticket(models.Model):
         blank=True,
         null=True,
         choices=ASSIGN_TYPE,
+    )
+
+    caza = models.CharField(
+        _('Caza'),
+        max_length=100,
+        blank=True,
+        null=True,
+        choices=CAZA,
     )
 
     assigned_to = models.ForeignKey(

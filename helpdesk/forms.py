@@ -180,6 +180,13 @@ class AbstractTicketForm(CustomFieldMixin, forms.Form):
         required=False
     )
 
+    caza = forms.ChoiceField(
+        widget=forms.Select(attrs={'class': 'form-control'}),
+        choices=Ticket.CAZA,
+        required=True,
+        label=_('Caza'),
+    )
+
     title = forms.CharField(
         max_length=100,
         required=True,
@@ -257,6 +264,7 @@ class AbstractTicketForm(CustomFieldMixin, forms.Form):
                         created=timezone.now(),
                         status=Ticket.OPEN_STATUS,
                         queue=queue,
+                        caza=self.cleaned_data['caza'],
                         report_type=self.cleaned_data['report_type'],
                         sub_report_type=self.cleaned_data['sub_report_type'],
                         other_type=self.cleaned_data['other_type'],

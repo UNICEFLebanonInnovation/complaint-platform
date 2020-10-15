@@ -13,7 +13,8 @@
                         {% if ticket.report_type %} {{ ticket.report_type }} <br> {% endif %}
                         {% if ticket.sub_report_type %}Sub report type: {{ ticket.sub_report_type }}<br> {% endif %}
                         {% if ticket.other_type %}Other: {{ ticket.other_type }}<br> {% endif %}
-                        Summary : {{ ticket.title }}
+                        Summary : {{ ticket.title }} <br/>
+                        Caza: {{ ticket.caza }}
                             <span class='ticket_toolbar float-right'>
                         <a href="{% url 'helpdesk:edit' ticket.id %}" class="ticket-edit"><button class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i> {% trans "Edit" %}</button></a>
                     | <a href="{% url 'helpdesk:delete' ticket.id %}" class="ticket-delete"><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> {% trans "Delete" %}</button></a>
