@@ -15,6 +15,7 @@ datatables for ticket_list.html. Called from staff.datatables_ticket_list.
 class DatatablesTicketSerializer(serializers.ModelSerializer):
     ticket = serializers.SerializerMethodField()
     assigned_to = serializers.SerializerMethodField()
+    assigned_to_type = serializers.SerializerMethodField()
     submitter = serializers.SerializerMethodField()
     created = serializers.SerializerMethodField()
     due_date = serializers.SerializerMethodField()
@@ -22,13 +23,14 @@ class DatatablesTicketSerializer(serializers.ModelSerializer):
     row_class = serializers.SerializerMethodField()
     time_spent = serializers.SerializerMethodField()
     queue = serializers.SerializerMethodField()
+    caza = serializers.SerializerMethodField()
 
     class Meta:
         model = Ticket
         # fields = '__all__'
         fields = ('ticket', 'id', 'priority', 'title', 'queue', 'status',
-                  'created', 'due_date', 'assigned_to', 'submitter', 'row_class',
-                  'time_spent')
+                  'created', 'due_date', 'assigned_to', 'assigned_to_type', 'caza',
+                  'submitter', 'row_class', 'time_spent')
 
     def get_queue(self, obj):
         return ({"title": obj.queue.title, "id": obj.queue.id})
@@ -44,6 +46,12 @@ class DatatablesTicketSerializer(serializers.ModelSerializer):
 
     def get_due_date(self, obj):
         return (humanize.naturaltime(obj.due_date))
+
+    def get_assigned_to_type(self, obj):
+        return (obj.assigned_to_type)
+
+    def get_caza(self, obj):
+        return (obj.caza)
 
     def get_assigned_to(self, obj):
         if obj.assigned_to:

@@ -65,7 +65,10 @@
                                 <th>{% trans "Status" %}</th>
                                 <th>{% trans "Created" %}</th>
                                 <th>{% trans "Due Date" %}</th>
-                                <th>{% trans "Owner" %}</th>
+                                <th>{% trans "Assign to" %}</th>
+                                <th>{% trans "Assign to Type" %}</th>
+                                <th>{% trans "Caza" %}</th>
+                                <!--<th>{% trans "Owner" %}</th>-->
                                 <th>{% trans "Submitter" %}</th>
                                 <th>{% trans "Time Spent" %}</th>
                             </tr>
@@ -359,6 +362,8 @@
                   }
               }
              },
+             {"data": "assigned_to_type"},
+             {"data": "caza"},
              {"data": "submitter"},
              {"data": "time_spent"},
          ]
